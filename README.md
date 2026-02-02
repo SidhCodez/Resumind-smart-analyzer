@@ -2,9 +2,10 @@
 
 A stunning, fully responsive portfolio website with a modern red, black, and white color scheme.
 
-## ✨ Features
+## ✨ Features help full
 
 ### 🎯 Sections
+
 - **Hero Section** - Dynamic introduction with typing effect and animated statistics
 - **About Section** - Professional background and highlights
 - **Services Section** - 6 service offerings with hover effects
@@ -15,6 +16,7 @@ A stunning, fully responsive portfolio website with a modern red, black, and whi
 - **Footer** - Quick links and social media
 
 ### 🚀 Premium Features
+
 - ✅ Fully responsive design (Desktop, Tablet, Mobile)
 - ✅ Animated hamburger menu for mobile devices
 - ✅ Custom cursor effect
@@ -30,6 +32,7 @@ A stunning, fully responsive portfolio website with a modern red, black, and whi
 - ✅ Skill category tabs
 
 ### 🎨 Color Palette
+
 - **Primary Red:** #DC143C
 - **Accent Red:** #FF1744
 - **Black:** #0A0A0A
@@ -83,31 +86,39 @@ sid-portfolio/
 ## ✏️ Customization Guide
 
 ### Update Your Name
+
 Find and replace "Sid" with your name in `index.html`
 
 ### Update Contact Information
+
 In the Contact section, update:
+
 - Email address
 - Phone number
 - Location
 - Social media links
 
 ### Add Your Projects
+
 In the Projects section, update:
+
 - Project titles
 - Descriptions
 - Categories (web, app, brand)
 - Links
 
 ### Modify Services
+
 Update the service cards with your own offerings
 
 ### Change Statistics
+
 Update the `data-target` attributes in the hero stats
 
 ## 📱 Mobile Menu
 
 The mobile menu features:
+
 - Animated hamburger icon (transforms to X when open)
 - Smooth slide-in animation
 - Staggered menu item animations
@@ -132,6 +143,7 @@ The mobile menu features:
 ## 🎨 Design Philosophy
 
 This portfolio follows modern web design principles:
+
 - **Visual Excellence** - Premium aesthetics with vibrant colors
 - **User Experience** - Smooth animations and intuitive navigation
 - **Performance** - Optimized for fast loading
