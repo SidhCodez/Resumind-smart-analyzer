@@ -171,7 +171,7 @@
                 <div class="about-text">
                     <h3 class="about-subtitle">Creative Developer & Designer</h3>
                     <p class="about-description">
-                        I'm a passionate developer with 5+ years of experience crafting beautiful, functional digital
+                        I'm a passionate developer with 1+ years of experience crafting beautiful, functional digital
                         experiences.
                         I combine technical expertise with creative design to deliver exceptional solutions.
                     </p>
@@ -336,9 +336,10 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M10 30L20 5L30 30H10Z" stroke="currentColor" stroke-width="2"
-                                stroke-linejoin="round" />
-                            <path d="M15 23H25" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="2" />
+                            <path
+                                d="M20 7V11M20 29V33M7 20H11M29 20H33M10.8 10.8L13.6 13.6M26.4 26.4L29.2 29.2M10.8 29.2L13.6 26.4M26.4 13.6L29.2 10.8"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
                     <h3 class="service-title">Maintenance & Support</h3>
@@ -346,9 +347,78 @@
                         Ongoing support and maintenance to keep your digital products running smoothly.
                     </p>
                     <ul class="service-features">
-                        <li>Bug Fixes</li>
+                        <li>Performance Monitoring</li>
+                        <li>Security Updates</li>
+                        <li>Technical Support</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path
+                                d="M20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35C21.1 35 22 34.1 22 33C22 31.9 22.9 31 24 31H27C31.4183 31 35 27.4183 35 23C35 13.0589 28.2843 5 20 5Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="13" cy="14" r="2" fill="currentColor" />
+                            <circle cx="12" cy="22" r="2" fill="currentColor" />
+                            <circle cx="19" cy="11" r="2" fill="currentColor" />
+                            <circle cx="26" cy="14" r="2" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-description">
+                        Creating visually stunning graphics for your brand.
+                    </p>
+                    <ul class="service-features">
+                        <li>Logo Design</li>
                         <li>Updates & Upgrades</li>
-                        <li>24/7 Support</li>
+                        <li>Quality Assurance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="5" y="8" width="30" height="24" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 8V32" stroke="currentColor" stroke-width="2" />
+                            <path d="M28 8V32" stroke="currentColor" stroke-width="2" />
+                            <path d="M5 14H12" stroke="currentColor" stroke-width="2" />
+                            <path d="M5 20H12" stroke="currentColor" stroke-width="2" />
+                            <path d="M5 26H12" stroke="currentColor" stroke-width="2" />
+                            <path d="M28 14H35" stroke="currentColor" stroke-width="2" />~
+                            <path d="M28 20H35" stroke="currentColor" stroke-width="2" />
+                            <path d="M28 26H35" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Video Editing</h3>
+                    <p class="service-description">
+                        Creating engaging video content that tells your brand's story.
+                    </p>
+                    <ul class="service-features">
+                        <li>Editing</li>
+                        <li>Motion Graphics</li>
+                        <li>Professionalism</li>
+                    </ul>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="18" cy="18" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M25 25L35 35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M12 20V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M18 20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M24 20V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">SEO</h3>
+                    <p class="service-description">
+                        Optimizing your online presence to increase search rankings and drive organic traffic.
+                    </p>
+                    <ul class="service-features">
+                        <li>Keyword Analysis</li>
+                        <li>On-Page SEO</li>
+                        <li>Link Building</li>
                     </ul>
                 </div>
             </div>
@@ -365,7 +435,7 @@
             <div class="skills-content">
                 <div class="skills-categories">
                     <button class="skill-category-btn active" data-category="frontend">Frontend</button>
-                    <button class="skill-category-btn" data-category="backend">Backend</button>
+                    <!-- <button class="skill-category-btn" data-category="backend">Backend</button> -->
                     <button class="skill-category-btn" data-category="design">Design</button>
                     <button class="skill-category-btn" data-category="tools">Tools</button>
                 </div>
@@ -398,17 +468,11 @@
                                 <div class="skill-progress" style="width: 88%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Vue.js</span>
-                                <span class="skill-percentage">82%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
-                            </div>
-                        </div>
+
                     </div>
-                    <div class="skill-category-content" data-category="backend">
+
+                    <!-- Backend skills section -->
+                    <!-- <div class="skill-category-content" data-category="backend">
                         <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">Node.js</span>
@@ -445,7 +509,7 @@
                                 <div class="skill-progress" style="width: 87%"></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="skill-category-content" data-category="design">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -458,29 +522,20 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Adobe XD</span>
-                                <span class="skill-percentage">88%</span>
+                                <span class="skill-name">Canva</span>
+                                <span class="skill-percentage">95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
+                                <div class="skill-progress" style="width: 95%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">Photoshop</span>
-                                <span class="skill-percentage">85%</span>
+                                <span class="skill-percentage">65%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Illustrator</span>
-                                <span class="skill-percentage">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                                <div class="skill-progress" style="width: 65%"></div>
                             </div>
                         </div>
                     </div>
@@ -496,20 +551,11 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">VS Code</span>
+                                <span class="skill-name">Antigravity</span>
                                 <span class="skill-percentage">95%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Docker</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -534,58 +580,64 @@
                 <span class="section-label">My Work</span>
                 <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
             </div>
+
             <div class="projects-filter" role="group" aria-label="Project Filters">
                 <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
-                <button class="filter-btn" data-filter="web" aria-pressed="false">Web Design</button>
-                <button class="filter-btn" data-filter="app" aria-pressed="false">App Development</button>
-                <button class="filter-btn" data-filter="brand" aria-pressed="false">Branding</button>
+                <button class="filter-btn" data-filter="code" aria-pressed="false">Web Development</button>
+                <button class="filter-btn" data-filter="video" aria-pressed="false">Video Edits</button>
+                <button class="filter-btn" data-filter="design" aria-pressed="false">Graphic Design</button>
             </div>
+
             <div class="projects-grid">
-                <div class="project-card" data-category="web">
+                <div class="project-card" data-category="code">
                     <div class="project-image">
-                        <img src="C:/Users/siddi/.gemini/antigravity/brain/eaa7196a-65ef-4d35-baec-dce2d9f5963f/project_ecommerce_1769964909386.png"
+                        <img src="https://royalcommunication2015.com/logo/royal%20log%20new%202.png"
                             alt="E-Commerce Platform Interface Design - Homepage with Product Grid"
                             style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
                         <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View E-Commerce Platform Project">View
+                            <a href="https://royalcommunication2015.com/" class="project-link"
+                                aria-label="View E-Commerce Platform Project">View
                                 Project</a>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span class="project-tag">Web Design</span>
-                            <span class="project-tag">Development</span>
+                            <span class="project-tag">Code Based</span>
                         </div>
-                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <h3 class="project-title">Advertising Agency Website</h3>
                         <p class="project-description">
-                            A modern e-commerce platform with seamless checkout experience and beautiful UI.
+                            This project features a visually stunning and highly functional website for an advertising
+                            agency. The design focuses on creativity, modern aesthetics, and a seamless user
+                            experience.
                         </p>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="app">
+                <div class="project-card" data-category="code">
                     <div class="project-image">
-                        <img src="C:/Users/siddi/.gemini/antigravity/brain/eaa7196a-65ef-4d35-baec-dce2d9f5963f/project_fitness_app_1769964926762.png"
-                            alt="Fitness Tracking Mobile App Interface showing dashboard and workout stats"
+                        <img src="" alt="Fitness Tracking Mobile App Interface showing dashboard and workout stats"
                             style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
                         <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View Fitness Tracking App Project">View
+                            <a href="https://scc-technophila.vercel.app/" class="project-link"
+                                aria-label="View Fitness Tracking App Project">View
                                 Project</a>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span class="project-tag">Mobile App</span>
-                            <span class="project-tag">UI/UX</span>
+                            <span class="project-tag">Code Based</span>
                         </div>
-                        <h3 class="project-title">Fitness Tracking App</h3>
+                        <h3 class="project-title">Tech Community Platform</h3>
                         <p class="project-description">
-                            An intuitive fitness app that helps users track workouts and achieve their goals.
+                            This project is a web-based platform designed to handle student registrations for technical
+                            events and activities.
+                            It allows users to easily browse events, fill out registration forms, and submit their
+                            details online via Notion Forms.
                         </p>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="brand">
+                <div class="project-card" data-category="code">
                     <div class="project-image">
                         <img src="C:/Users/siddi/.gemini/antigravity/brain/eaa7196a-65ef-4d35-baec-dce2d9f5963f/project_branding_1769964943805.png"
                             alt="Tech Startup Brand Identity - Logo, Business Cards, and Stationery Mockup"
@@ -597,8 +649,7 @@
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span class="project-tag">Branding</span>
-                            <span class="project-tag">Identity</span>
+                            <span class="project-tag">Code Based</span>
                         </div>
                         <h3 class="project-title">Tech Startup Branding</h3>
                         <p class="project-description">
@@ -607,7 +658,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="web">
+                <div class="project-card" data-category="code">
                     <div class="project-image">
                         <img src="C:/Users/siddi/.gemini/antigravity/brain/eaa7196a-65ef-4d35-baec-dce2d9f5963f/project_dashboard_1769964962098.png"
                             alt="Analytics Dashboard UI Design with Charts and Graphs"
@@ -619,8 +670,7 @@
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span class="project-tag">Web App</span>
-                            <span class="project-tag">Dashboard</span>
+                            <span class="project-tag">Code Based</span>
                         </div>
                         <h3 class="project-title">Analytics Dashboard</h3>
                         <p class="project-description">
@@ -629,7 +679,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="app">
+                <div class="project-card" data-category="code">
                     <div class="project-image">
                         <div class="project-overlay">
                             <a href="#" class="project-link" aria-label="View Social Media App Project">View Project</a>
@@ -637,8 +687,7 @@
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span class="project-tag">Mobile</span>
-                            <span class="project-tag">Social</span>
+                            <span class="project-tag">Code Based</span>
                         </div>
                         <h3 class="project-title">Social Media App</h3>
                         <p class="project-description">
@@ -647,7 +696,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="web">
+                <div class="project-card" data-category="code">
                     <div class="project-image">
                         <div class="project-overlay">
                             <a href="#" class="project-link" aria-label="View Creative Agency Website Project">View
@@ -656,12 +705,82 @@
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span class="project-tag">Portfolio</span>
-                            <span class="project-tag">Creative</span>
+                            <span class="project-tag">Code Based</span>
                         </div>
                         <h3 class="project-title">Creative Agency Website</h3>
                         <p class="project-description">
                             A stunning portfolio website for a creative agency with smooth animations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Video Edits -->
+                <div class="project-card" data-category="video">
+                    <div class="project-image">
+                        <img src="C:\Users\siddi\.gemini\antigravity\brain\b56edc97-7a0a-4830-8c09-3df66a52b117\video_editing_project_1_1776963889451.png" alt="Cinematic Product Showcase Video" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Edit</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Video Edit</span>
+                        </div>
+                        <h3 class="project-title">Cinematic Product Reveal</h3>
+                        <p class="project-description">
+                            A high-energy product showcase with custom motion graphics and color grading.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="video">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Edit</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Video Edit</span>
+                        </div>
+                        <h3 class="project-title">Brand Storytelling</h3>
+                        <p class="project-description">
+                            Compelling narrative-driven video content for a modern tech brand.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Design</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Graphic Design</span>
+                        </div>
+                        <h3 class="project-title">Minimalist Branding</h3>
+                        <p class="project-description">
+                            Complete visual identity including logo, typography, and color palette.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Design</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Graphic Design</span>
+                        </div>
+                        <h3 class="project-title">Social Media Kit</h3>
+                        <p class="project-description">
+                            Engaging social media templates and graphics for brand consistency.
                         </p>
                     </div>
                 </div>

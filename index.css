@@ -315,6 +315,7 @@ body {
     line-height: 1.1;
     margin-bottom: var(--spacing-md);
     font-family: var(--font-display);
+    min-height: 2.2em; /* Prevents layout jump when text changes */
 }
 
 .gradient-text {
@@ -327,13 +328,16 @@ body {
 .typed-text {
     position: relative;
     display: inline-block;
+    min-width: 10ch; /* Space for the longest word to prevent horizontal shift */
+    text-align: left;
 }
 
 .typed-text::after {
     content: '|';
-    position: absolute;
-    right: -10px;
+    margin-left: 2px;
+    display: inline-block;
     animation: blink 1s step-end infinite;
+    color: var(--primary-red);
 }
 
 @keyframes blink {
@@ -1649,6 +1653,7 @@ section {
     .hero-title {
         font-size: 2rem;
         line-height: 1.2;
+        min-height: 3.6em; /* Accommodates wrapping on smaller screens */
     }
 
     .section-title {
