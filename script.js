@@ -380,13 +380,22 @@ document.addEventListener('mouseleave', () => {
 // PARALLAX EFFECT FOR HERO
 // ===================================
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroContent = document.querySelector('.hero-content');
-    const heroImage = document.querySelector('.hero-image');
+    // Only apply parallax on desktop screens
+    if (window.innerWidth > 768) {
+        const scrolled = window.pageYOffset;
+        const heroContent = document.querySelector('.hero-content');
+        const heroImage = document.querySelector('.hero-image');
 
-    if (heroContent && heroImage) {
-        heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
-        heroImage.style.transform = `translateY(${scrolled * 0.2}px)`;
+        if (heroContent && heroImage) {
+            heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+            heroImage.style.transform = `translateY(${scrolled * 0.2}px)`;
+        }
+    } else {
+        // Reset transforms on mobile if they were set
+        const heroContent = document.querySelector('.hero-content');
+        const heroImage = document.querySelector('.hero-image');
+        if (heroContent) heroContent.style.transform = 'none';
+        if (heroImage) heroImage.style.transform = 'none';
     }
 });
 
