@@ -287,7 +287,7 @@ body {
 .grain-overlay {
     position: fixed;
     inset: 0;
-    z-index: 9998;
+    z-index: 1; /* Must stay below navbar (1000) and all UI */
     pointer-events: none;
     opacity: 0.028;
     /* SVG turbulence grain baked inline as data URI */
@@ -1587,12 +1587,8 @@ section {
     .about-image-wrapper {
         height: 450px;
     }
-}
 
-/* Tablet Portrait (768px and below) */
-@media (max-width: 768px) {
-
-    /* Navigation */
+    /* Navigation - Moved to 1024px to ensure tablet responsiveness */
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1626,33 +1622,13 @@ section {
         transform: translateX(0);
     }
 
-    .nav-menu.active li:nth-child(1) {
-        transition-delay: 0.1s;
-    }
-
-    .nav-menu.active li:nth-child(2) {
-        transition-delay: 0.2s;
-    }
-
-    .nav-menu.active li:nth-child(3) {
-        transition-delay: 0.3s;
-    }
-
-    .nav-menu.active li:nth-child(4) {
-        transition-delay: 0.4s;
-    }
-
-    .nav-menu.active li:nth-child(5) {
-        transition-delay: 0.5s;
-    }
-
-    .nav-menu.active li:nth-child(6) {
-        transition-delay: 0.6s;
-    }
-
-    .nav-menu.active li:nth-child(7) {
-        transition-delay: 0.7s;
-    }
+    .nav-menu.active li:nth-child(1) { transition-delay: 0.1s; }
+    .nav-menu.active li:nth-child(2) { transition-delay: 0.2s; }
+    .nav-menu.active li:nth-child(3) { transition-delay: 0.3s; }
+    .nav-menu.active li:nth-child(4) { transition-delay: 0.4s; }
+    .nav-menu.active li:nth-child(5) { transition-delay: 0.5s; }
+    .nav-menu.active li:nth-child(6) { transition-delay: 0.6s; }
+    .nav-menu.active li:nth-child(7) { transition-delay: 0.7s; }
 
     .nav-link {
         font-size: 1.25rem;
@@ -1668,6 +1644,10 @@ section {
     .mobile-menu-toggle {
         display: flex;
     }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
 
     /* Hero Section */
     .hero {
