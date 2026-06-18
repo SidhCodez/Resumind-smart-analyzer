@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-100: #0f0e1a;
+  --color-dark-200: #1a1830;
+  --color-light-blue-100: #c1d3f8;
+  --color-light-blue-200: #d6e0ff;
+  --color-badge-green: #d1fae3;
+  --color-badge-red: #fce8e8;
+  --color-badge-yellow: #fef9c3;
+
+  --font-display: "Mona Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    @apply scroll-smooth;
+  }
+  body {
+    font-family: var(--font-display);
+    @apply bg-[#f5f6fb] text-gray-900 antialiased;
+  }
+  #root {
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .gradient-border {
+    @apply rounded-2xl bg-gradient-to-b from-indigo-200 via-violet-100 to-white p-[2px] shadow-sm transition-all hover:shadow-lg;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none cursor-pointer;
+  }
+
+  .back-button {
+    @apply inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50;
+  }
+
+  .auth-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-dark-100 px-6 py-3 font-semibold text-white shadow-md transition-all hover:opacity-90 cursor-pointer w-full;
+  }
+
+  .score-badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-gray-600 transition-colors hover:text-indigo-600;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f3 25%, #e8e8f0 50%, #f0f0f3 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}
