@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { usePuterStore } from '~/lib/puter';
-import { IconLogout, IconSparkle } from './Icons';
+import { IconLogout } from './Icons';
 
 export default function Navbar() {
   const location = useLocation();
